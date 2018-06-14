@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xhwl.xhwlownerapp.activity.View.HomeView.FamilyActivity.AllRoomActivity">
+    <include layout="@layout/top_layout"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="@drawable/table_btn_bg">
+        <GridView
+            android:id="@+id/all_room_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:columnWidth="110px"
+            android:verticalSpacing="45px"
+            android:horizontalSpacing="20px">
+
+        </GridView>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

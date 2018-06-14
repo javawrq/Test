@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ver="1"
+    android:orientation="vertical"
+    tools:ignore="NamespaceTypo">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="38px"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/verificationcode_back"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:background="@drawable/close"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="510px"
+        android:layout_marginTop="90px"
+        android:layout_marginRight="60px"
+        android:layout_marginLeft="60px"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输入验证码"
+                android:textColor="@color/setPassword"
+                android:textSize="36px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码已发送到"
+                android:textColor="@color/third_party"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/verificationcode_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/third_party" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108px"
+            android:layout_marginTop="60px"
+            android:orientation="horizontal">
+            <com.xhwl.xhwlownerapp.UIUtils.VerificationCodeView
+                android:id="@+id/verificationcodeview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:vcv_et_bg="@drawable/et_login_code"
+                app:vcv_et_cursor="@drawable/et_cursor"
+                app:vcv_et_inputType="number"
+                app:vcv_et_number="6"
+                app:vcv_et_text_color="@android:color/black"
+                app:vcv_et_text_size="5sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/verificationcode_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textColor="@color/third_party" />
+            <TextView
+                android:id="@+id/verificationcode_voice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="使用语音验证码"
+                android:textColor="@color/setPassword" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

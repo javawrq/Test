@@ -1,0 +1,31 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="230px"
+    android:layout_height="200px"
+    android:layout_gravity="center"
+    android:background="@drawable/residential_card_bg"
+    android:orientation="vertical" >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+        <ImageView
+            android:id="@+id/residential_gridview_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:layout_marginLeft="25px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/residential_gridview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30px"
+        android:layout_weight="1.5"
+        android:textSize="26px"
+        android:textColor="@color/home_girdview"
+        android:text="云对讲" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zaaach:toprightmenu-1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toprightmenu-1.0.aar/63ab925cf8bc17fbdac4fb5681840658/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toprightmenu-1.0.aar/63ab925cf8bc17fbdac4fb5681840658/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaaach/toprightmenu/1.0/141774ba58a81dc0c2a897e90321d0f218fddd41/toprightmenu-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

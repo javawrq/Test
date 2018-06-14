@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xhwl.xhwlownerapp.activity.View.HomeView.DeviceActivity.PilotLampExplainActivity">
+
+    <include layout="@layout/top_layout"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="414px"
+        android:background="@drawable/device_gateway_bg">
+
+        <ImageView
+            android:layout_width="340px"
+            android:layout_height="340px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/device_gateway" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="56px"
+        android:layout_marginLeft="58px"
+        android:layout_marginRight="64px"
+        android:background="@color/color_device_add">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="36px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="93px"
+                android:layout_gravity="center"
+                android:background="@color/color_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/device_serial_num" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="93px"
+                android:layout_gravity="center"
+                android:background="@color/color_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="360px"
+            android:layout_marginLeft="54px"
+            android:orientation="vertical"
+            >
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28px"
+                    android:textColor="@color/color_device_add_step"
+                    android:text="@string/pilotlamp_1"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28px"
+                    android:textColor="@color/color_device_add_step"
+                    android:text="@string/pilotlamp_2"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28px"
+                    android:textColor="@color/color_device_add_step"
+                    android:text="@string/pilotlamp_3"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

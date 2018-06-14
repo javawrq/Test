@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wilddog.client:wilddog-auth-android-2.0.7">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wilddog-auth-android-2.0.7.aar/e891022ce45fd67ed8bf13fa6284f068/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wilddog-auth-android-2.0.7.aar/e891022ce45fd67ed8bf13fa6284f068/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wilddog.client/wilddog-auth-android/2.0.7/53420e67d2f509605d163c51d0d8a6fe0bfbae93/wilddog-auth-android-2.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

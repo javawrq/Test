@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--点歌列表list-->
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="40px"
+    android:layout_marginRight="50px"
+    android:orientation="horizontal">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="100px"
+            android:layout_height="140px"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/music_list_singer_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/music_singer_img"
+                android:layout_gravity="center"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/music_list_musicname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/music_text"
+                android:textSize="15sp"
+                android:text="we don’t talk anymore "
+                android:gravity="bottom|left"/>
+            <TextView
+                android:id="@+id/music_list_singername"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/music_text"
+                android:textSize="15sp"
+                android:text="CHarlie Puth"
+                android:gravity="top|left"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/music_start" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

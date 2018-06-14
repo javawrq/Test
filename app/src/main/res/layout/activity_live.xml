@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xhwl.xhwlownerapp.activity.View.VideoView.LiveActivity">
+
+    <include layout="@layout/top_layout"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700px">
+        <com.xhwl.xhwlownerapp.UIUtils.CustomSurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView
+        android:id="@+id/video_open_sound"
+        android:layout_width="41px"
+        android:layout_height="41px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/video_mute"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/video_screenshot"
+            android:layout_width="648px"
+            android:layout_height="70px"
+            android:background="@drawable/introduce_btn_bg"
+            android:layout_marginBottom="67px"
+            android:text="抓拍"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:layout_gravity="center|bottom"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

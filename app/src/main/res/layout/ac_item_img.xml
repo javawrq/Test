@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20px"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/hk_img"
+        android:layout_width="330px"
+        android:layout_height="250px"
+        android:scaleType="fitXY"
+        android:background="@drawable/residential_video"/>
+
+    <ImageView
+        android:id="@+id/check_box"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginLeft="230px"
+        android:layout_marginTop="10px"
+        android:src="@drawable/radio_unchecked"
+        android:visibility="visible"/>
+
+</com.zhy.autolayout.AutoFrameLayout>

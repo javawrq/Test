@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: bluetoothsdklib:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothsdklib.aar/14b2b5da465be8255d302ee4b0177a77/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothsdklib.aar/14b2b5da465be8255d302ee4b0177a77/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zyao89:zloading-1.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zloading-1.1.2.aar/6a98a3f891d2be667a7fb814c111f8a1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zloading-1.1.2.aar/6a98a3f891d2be667a7fb814c111f8a1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zyao89/zloading/1.1.2/154bd78a0d5da893b94febc78414657724fa0dcf/zloading-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

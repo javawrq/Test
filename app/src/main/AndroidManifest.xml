@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xhwl.xhwlownerapp">
+
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据  这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 友盟权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 读外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 播放声音权限 -->
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 二维码保存文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 写内部存储 -->
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <!-- 读内部存储 -->
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Required 极光推送 -->
+    <permission
+        android:name="com.xhwl.xhwlownerapp.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required 极光推送 一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.xhwl.xhwlownerapp.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".UIUtils.MyAPP"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- AutoLinearLayout 必须的配置 -->
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <!-- 极光推送 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="3a74312a795793257ac2ddbb" />
+
+        <!-- 友盟配置文件方式初始化appkey和channel -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5abb0055f29d980384000097" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="xhwl_umeng_android" />
+
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Rhqa323D1Rmy6NHnhvae4FATGdXY058q" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- main -->
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 主页 -->
+        <activity android:name=".activity.View.HomeView.HomeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 登录 -->
+        <activity android:name=".activity.View.LoginView.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 首次登录设置密码 -->
+        <activity android:name=".activity.View.RegisterView.SetPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 第三方首次登录绑定手机 -->
+        <activity android:name=".activity.View.RegisterView.WechatRegBindPhoneActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 短信登录验证验证码 -->
+        <activity
+            android:name=".activity.View.LoginView.VerificationCodeActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            />
+
+        <!-- 忘记密码 -->
+        <activity android:name=".activity.View.UserInfoView.ForgetPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户协议 -->
+        <activity android:name=".activity.View.RegisterView.SecurityProtocolActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".activity.View.Guide.BootActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash"
+            android:windowDisablePreview="true"
+            android:windowIsTranslucent="false">
+
+            <!-- 入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 指引页 -->
+        <activity
+            android:name=".activity.View.Guide.GuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 重置密码 -->
+        <activity android:name=".activity.View.UserInfoView.ResetPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 微信登录 -->
+        <activity
+            android:name="com.xhwl.xhwlownerapp.wxapi.WXEntryActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 新浪 sdk中需要的Activity -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- qq完整版 sdk中需要的Activity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106374982" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 选择项目 -->
+        <activity android:name=".activity.View.HomeView.SelectionProjectActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 云瞳监控视频列表 -->
+        <activity android:name=".activity.View.VideoView.VideoListActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 云瞳监控视频播放 -->
+        <activity android:name=".activity.View.VideoView.LiveActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 云瞳监控视频抓拍记录 -->
+        <activity android:name=".activity.View.VideoView.PictureRecordActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 门卡管理 -->
+        <activity android:name=".activity.View.GrantCard.DoorCardManagerActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 自发卡 -->
+        <activity android:name=".activity.View.GrantCard.GrantCardActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 访客记录 -->
+        <activity android:name=".activity.View.GrantCard.RecordActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 访客邀请 -->
+        <activity android:name=".activity.View.GrantCard.VisitorInvitationActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 背景音乐 已点歌曲 -->
+        <activity android:name=".activity.View.BackgroundMusic.MusicAlreadyActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 背景音乐 搜索歌曲 -->
+        <activity android:name=".activity.View.BackgroundMusic.MusicSearchActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 背景音乐 歌曲列表 -->
+        <activity android:name=".activity.View.BackgroundMusic.MusicServiceActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 小七商城 -->
+        <activity android:name=".activity.View.Shop.XQShopActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 个人中心 基本信息 -->
+        <activity android:name=".activity.View.UserInfoView.BasicsInfo.MyInfoActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 修改昵称 -->
+        <activity android:name=".activity.View.UserInfoView.BasicsInfo.SetNickNameActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 修改性别 -->
+        <activity android:name=".activity.View.UserInfoView.BasicsInfo.SetSexActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 修改头像 -->
+        <activity android:name=".activity.View.UserInfoView.BasicsInfo.SetHeadImgActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 我的二维码 -->
+        <activity android:name=".activity.View.UserInfoView.BasicsInfo.MyQRCodeActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 账号安全 -->
+        <activity android:name=".activity.View.UserInfoView.AccountInfo.AccountSecurityActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 修改密码 -->
+        <activity android:name=".activity.View.UserInfoView.AccountInfo.ModifyPwdActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 我的家庭 -->
+        <activity android:name=".activity.View.UserInfoView.FamilyInfo.MyFamilyActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 我的小区 -->
+        <activity android:name=".activity.View.UserInfoView.ResidentialInfo.MyResidentialActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 我的设备 -->
+        <activity android:name=".activity.View.UserInfoView.DeviceInfo.MyDeviceActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 绑定微信设置密码 -->
+        <activity android:name=".activity.View.RegisterView.BindWechatSetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 蓝牙一键开门 -->
+        <activity
+            android:name=".activity.View.BluetoothOpenDoor.OpenDoor.AutoOpenDoorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!-- 云对讲接听 -->
+        <activity android:name=".activity.View.CloudTalk.ConversationActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 云对讲在线列表 -->
+        <activity android:name=".activity.View.CloudTalk.UserListActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 云对讲监听服务 -->
+        <service android:name=".Service.MyService" />
+        <!--版本更新-->
+        <activity android:name=".activity.View.HomeView.VersionActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 云对讲接听历史 -->
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.xhwl.xhwlownerapp" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.xhwl.xhwlownerapp.DataProvider"
+            android:exported="false" />
+        <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="com.xhwl.xhwlownerapp.DownloadProvider"
+            android:exported="true" />
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.xhwl.xhwlownerapp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".Receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.xhwl.xhwlownerapp" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
+        <activity android:name=".activity.View.HomeView.FamilyActivity.AllRoomActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.CloudTalk.TalkActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.CloudTalk.CallServerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.CloudTalk.LocationRoomActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.View.LoginView.OtherLoginDialogActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xhwl.xhwlownerapp.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.View.VideoView.ViewPictureActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.View.HomeView.DeviceActivity.GatewayQRCodeLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.HomeView.DeviceActivity.PilotLampExplainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.HomeView.DeviceActivity.GatewayLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.HomeView.DeviceActivity.ResetGatewayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.HomeView.DeviceActivity.AddDeviceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.View.HomeView.DeviceActivity.AddGatewayActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

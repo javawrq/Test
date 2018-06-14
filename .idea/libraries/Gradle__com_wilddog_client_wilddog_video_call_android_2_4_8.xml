@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wilddog.client:wilddog-video-call-android-2.4.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wilddog-video-call-android-2.4.8.aar/cfc5932845194fd3c2cc7433a73ceaa4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wilddog-video-call-android-2.4.8.aar/cfc5932845194fd3c2cc7433a73ceaa4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wilddog.client/wilddog-video-call-android/2.4.8/a51ee54c5228ca5661d08c505c632b10affee864/wilddog-video-call-android-2.4.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

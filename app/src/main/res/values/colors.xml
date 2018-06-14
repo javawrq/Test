@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorText">#5284d6</color>
+    <color name="login_password">#9f9d9d</color>
+    <color name="login_yzm_1">#5698ff</color>
+    <color name="login_yzm_0">#767575</color>
+    <color name="login_password_phone">#d1cfcf</color>
+    <color name="login_unregistered">#b1b0b0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="third_party">#949494</color>
+    <color name="setPassword">#5284d6</color>
+    <color name="edit_hint">#c6c6c6</color>
+    <color name="user_info_name">#403c46</color>
+    <color name="top_layout_title">#444b5c</color>
+    <color name="info_proName">#aaaaab</color>
+    <color name="info_basic_info">#b6b6c0</color>
+    <color name="account_security">#7f7f7f</color>
+    <color name="account_security_nickname">#b6b6c0</color>
+    <color name="home_location">#0da5f3</color>
+    <color name="home_bottom">#606060</color>
+    <color name="home_bottom_1">#cbcbcb</color>
+    <color name="home_girdview">#262525</color>
+
+    <color name="translucent_background">#90000000</color>
+
+    <color name="select_pro_bg">#f2f2f2</color>
+    <color name="select_pro_city_text">#575656</color>
+    <color name="select_proname_text">#c6c6c6</color>
+    <color name="HK_delect_text">#5496fd</color>
+    <color name="HK_delect_btn">#afafb0</color>
+
+    <!--zxing-->
+    <color name="contents_text">#000000</color>
+    <color name="encode_view">#ffffff</color>
+    <color name="possible_result_points">#ffbd21</color>
+    <color name="result_minor_text">#c0c0c0</color>
+    <color name="result_points">#99cc00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#ff000000</color>
+    <color name="status_text">#ffffff</color>
+    <color name="viewfinder_mask">#50000000</color>
+    <color name="react">#63B8FF</color>
+    <color name="scanLineColor">#63B8FF</color>
+
+    <color name="music_text">#303030</color>
+    <color name="music_hint">#d2d2da</color>
+    <color name="music_top">#444b5c</color>
+    
+    <color name="mood_text">#4a5665</color>
+    <color name="dialog_text">#4a5665</color>
+    <color name="info_text">#a8a8a8</color>
+    <color name="house_text">#1895fb</color>
+    <color name="family_home_name">#151515</color>
+
+    <color name="color_history">#7f7f7f</color>
+    <color name="color_device">#e1e0e0</color>
+    
+    <color name="color_talk_roomnum">#535456</color>
+    <color name="color_talk_quick_bg">#dbe1e6</color>
+    <color name="color_talk_quick_text">#403c46</color>
+    
+    <color name="color_device_gateway">#676E7C</color>
+    <color name="color_device_all">#3E3E3E</color>
+    <color name="color_device_add">#F9FAFB</color>
+    <color name="color_device_add_step">#444B5C</color>
+    <color name="color_line">#dde0e6</color>
+    <color name="color_red">#ff0000</color>
+</resources>

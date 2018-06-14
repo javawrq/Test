@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+    defaultConfig {
+        applicationId "com.xhwl.xhwlownerapp"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 13
+        versionName "1.2.1"
+        //versionName  versionName是给用户看的，可以写1.1 , 1.2等等版本
+        //versionCode是给设备程序识别版本(升级)用的，必须是一个interger值，整数，代表app更新过多少次
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //abiFilters "armeabi-v7a"//解决so包冲突
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+    }
+
+    signingConfigs {
+        releaseConfig {
+//            storeFile file('E:/Android_keystore/xhwl_keystore.jks') //签名文件路径
+//            storePassword "842135"
+//            keyAlias "xhwl"
+//            keyPassword "842135" //签名密码
+        }
+        debugConfig {
+//            storeFile file('E:/Android_keystore/xhwl_keystore.jks') //签名文件路径
+//            storePassword "842135"
+//            keyAlias "xhwl"
+//            keyPassword "842135" //签名密码
+        }
+    }
+
+    buildTypes {
+        debug {
+//            minifyEnabled false
+//            signingConfig signingConfigs.releaseConfig
+        }
+        release {
+//            minifyEnabled false
+//            signingConfig signingConfigs.releaseConfig
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+
+    configurations {
+        all {
+            exclude group: 'org.json', module: 'json'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.umeng.sdk:common:latest.integration'
+    implementation 'com.umeng.sdk:analytics:latest.integration'
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+    implementation files('libs/SocialSDK_WeChat_Simplify.jar')
+    implementation files('libs/umeng_shareboard_widget.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/umeng_social_shareboard.jar')
+    implementation files('libs/umeng_social_shareview.jar')
+    implementation files('libs/umeng_social_tool.jar')
+    implementation(name: 'ivms_8700_sdk_library', ext: 'aar')
+    implementation(name: 'bluetoothsdklib', ext: 'aar')
+    implementation files('libs/osgi3.9.0.jar')
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.zaaach:toprightmenu:1.0'
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    implementation 'com.wilddog.client:wilddog-video-call-android:2.4.8'
+    implementation 'com.wilddog.client:wilddog-auth-android:2.0.7'
+    implementation 'com.wilddog.client:wilddog-sync-android:2.3.7'
+    implementation files('libs/jcore-android-1.2.0.jar')
+    implementation files('libs/jpush-android-3.1.2.jar')
+    implementation 'com.zyao89:zloading:1.1.2'
+    implementation 'top.zibin:Luban:1.1.5'
+    //implementation project(path: ':tabpagerindictor')
+    //implementation 'com.github.yuzhiqiang1993:zxing:2.1.8'
+    implementation files('libs/core-3.3.0.jar')
+}

@@ -1,0 +1,2 @@
+# CommunitySmartFrontendAndroid
+智能家居版小七当家客户端

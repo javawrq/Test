@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="80dp"
+    android:gravity="center"
+    android:id="@+id/id_circle_menu_item_liner"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@id/id_circle_menu_item_image"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@id/id_circle_menu_item_text"
+        android:layout_width="47dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="保险"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+</LinearLayout>

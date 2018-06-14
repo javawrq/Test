@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xhwl.xhwlownerapp.activity.View.HomeView.DeviceActivity.GatewayLoginActivity">
+
+    <include layout="@layout/top_layout"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_device_add"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="442px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="320px"
+                android:layout_height="320px"
+                android:layout_gravity="center"
+                android:background="@drawable/device_gateway_login" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="206px"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:background="@drawable/table_btn_bg"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="账号："
+                    android:textColor="@color/color_device_all"
+                    android:textSize="30px" />
+
+                <com.xhwl.xhwlownerapp.UIUtils.ClearEditText
+                    android:id="@+id/gateway_username"
+                    android:layout_width="0dp"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入设备型号"
+                    android:paddingLeft="20px"
+                    android:textColorHint="@color/edit_hint"
+                    android:textSize="30px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="45px"
+                android:layout_marginRight="45px"
+                android:background="@color/color_line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="密码："
+                    android:textColor="@color/color_device_all"
+                    android:textSize="30px" />
+
+                <com.xhwl.xhwlownerapp.UIUtils.ClearEditText
+                    android:id="@+id/gateway_password"
+                    android:layout_width="0dp"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:paddingLeft="20px"
+                    android:textColorHint="@color/edit_hint"
+                    android:textSize="30px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="45px"
+            android:layout_marginLeft="45px"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/gateway_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/next_btn_bg"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gateway_scan_qrcode_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还可以通过扫码登录"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/login_yzm_1"
+                android:textSize="26px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,304 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fbfbfb"
+    tools:context="com.xhwl.xhwlownerapp.activity.View.HomeView.HomeFragment.HomeResidentialFragment">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/residential_weather_bg"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="bottom">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_location_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/residential_location_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/residential_location"
+                    />
+
+                <TextView
+                    android:id="@+id/residential_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/residential_location_img"
+                    android:layout_marginLeft="10px"
+                    android:layout_toEndOf="@+id/residential_location_img"
+                    android:text="请选择小区"
+                    android:textColor="@color/home_location" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/residential_san_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/residential_location"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/residential_sanqrcrad" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/residential_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#151515"
+                android:textSize="100px" />
+
+            <TextView
+                android:id="@+id/residential_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/residential_temp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:textColor="#1f1f1f"
+                android:textSize="26px" />
+
+            <TableLayout
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="1"
+                android:stretchColumns="1">
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/residential_mood"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/residential_weather"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/mood_text"
+                android:textSize="22px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:orientation="horizontal">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_cloudtlak_linear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/residential_card_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/residential_cloudtlak_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="25px"
+                    android:background="@drawable/residential_cloudtlak"/>
+                <TextView
+                    android:id="@+id/residential_cloudtlak_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:textSize="26px"
+                    android:textColor="@color/home_girdview"
+                    android:text="云对讲" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_video_linear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/residential_card_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/residential_video_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginTop="25px"
+                    android:background="@drawable/residential_video" />
+                <TextView
+                    android:id="@+id/residential_video_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:textSize="26px"
+                    android:textColor="@color/home_girdview"
+                    android:text="云瞳" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_visitor_linear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/residential_card_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/residential_visitor_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="25px"
+                    android:background="@drawable/residential_visitor"/>
+                <TextView
+                    android:id="@+id/residential_visitor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:textSize="26px"
+                    android:textColor="@color/home_girdview"
+                    android:text="访客邀请" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_doorcard_linear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/residential_card_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/residential_doorcard_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="25px"
+                    android:background="@drawable/residential_doorcard"/>
+                <TextView
+                    android:id="@+id/residential_doorcard_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:textSize="26px"
+                    android:textColor="@color/home_girdview"
+                    android:text="门卡管理" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_travelrecord_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_weight="1"
+                android:background="@drawable/residential_card_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/residential_travelrecord_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginTop="25px"
+                    android:background="@drawable/residential_travelrecord" />
+
+                <TextView
+                    android:id="@+id/residential_travelrecord_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="出行记录"
+                    android:textColor="@color/home_girdview"
+                    android:textSize="26px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/residential_music_linear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/residential_card_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/residential_music_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="25px"
+                    android:background="@drawable/residential_bg_music"/>
+                <TextView
+                    android:id="@+id/residential_music_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:textSize="26px"
+                    android:textColor="@color/home_girdview"
+                    android:text="音乐点播" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlemenubg"
+                android:layout_gravity="center|bottom"
+                />
+
+            <com.xhwl.xhwlownerapp.UIUtils.CircleUIUtil.UpCircleMenuLayout
+                android:id="@+id/id_mymenulayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                ></com.xhwl.xhwlownerapp.UIUtils.CircleUIUtil.UpCircleMenuLayout>
+        </FrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

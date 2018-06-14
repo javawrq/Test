@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: ivms_8700_sdk_library:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/jars/libs/gson-2.7.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/jars/libs/android-async-http-1.4.5.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/jars/libs/MCRSDK.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/jars/libs/simple-xml-core.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ivms_8700_sdk_library.aar/6c4e10b13c3be354b1054b7ea78427e4/jars/libs/PlayerSDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">小七当家</string>
+    <string name="app_login_password">密码</string>
+    <string name="app_login_yzm">验证码</string>
+    <string name="app_login_password_userphone">请输入手机号码</string>
+    <string name="app_login_password_userpwd">请输入密码</string>
+    <string name="app_login">登录</string>
+    <string name="app_login_findpwd">找回密码</string>
+    <string name="app_other_logins">其他登录</string>
+    <string name="app_login_yzm_agreement">注册小七当家代表您已同意</string>
+    <string name="app_login_yzm_agree"><u>小七当家用户服务协议</u></string>
+    <string name="app_login_yzm_unReg">未注册的手机，验证后自动注册并登录</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login_failed">登陆失败,请检查网络</string>
+    <string name="logout_failed">退出失败</string>
+    <string name="login_success">登录成功</string>
+    <string name="logout_success">退出成功</string>
+    <string name="empty">数据为空</string>
+    <string name="loading_process_tip">加载中&#8230;</string>
+    <string name="loading_success">加载成功</string>
+    <string name="loading_failed">加载失败</string>
+    <string name="get_root_control_center_error">获取根节点出错</string>
+    <string name="get_sub_resource_list_error">获取次级资源列表出错</string>
+    <string name="no_permission">没有权限</string>
+    <string name="device_not_online">设备不在线</string>
+
+    <string name="loading_camera_info">加载监控详细信息</string>
+    <string name="loading_record_info">加载录像片段信息</string>
+    <string name="loading_camera_info_failure">加载监控点详细信息失败</string>
+    <string name="loading_device_info">加载设备信息</string>
+    <string name="loading_device_info_failure">加载设备信息失败</string>
+    <string name="loading_authority_token_failure">加载认证TOKEN失败</string>
+    <string name="loading_play_url">加载播放地址</string>
+    <string name="loading_play_url_failure">加载播放地址失败</string>
+    <string name="live_start_play">播放</string>
+    <string name="live_stop_play">停止</string>
+    <string name="live_capture">抓拍</string>
+    <string name="rtsp_success">启动取流成功</string>
+    <string name="rtsp_fail">启动取流失败</string>
+    <string name="live_stop_success">停止成功</string>
+    <string name="start_open_failed">开启播放库失败</string>
+    <string name="play_display_success">播放成功</string>
+    <string name="play_back_finish">录像播放结束</string>
+    <string name="start_ptz">开始云台控制</string>
+    <string name="stop_ptz">停止云台控制</string>
+    <string name="ptz_success">云台控制成功</string>
+    <string name="ptz_fail">云台控制失败</string>
+    <string name="start_record">启动录像</string>
+    <string name="stop_record">停止录像</string>
+    <string name="start_record_success">启动录像成功</string>
+    <string name="start_record_fail">启动录像失败</string>
+    <string name="stop_record_success">停止录像成功</string>
+    <string name="start_Audio">开启音频</string>
+    <string name="start_Talk">开启语音对讲</string>
+    <string name="start_Audio_success">开启音频成功</string>
+    <string name="start_Talk_success">开启语音对讲成功</string>
+    <string name="no_Talk_channels">该设备无可对讲通道</string>
+    <string name="select_channel">请选择通道号</string>
+    <string name="analog_channel">对讲通道%d</string>
+    <string name="start_Audio_fail">开启音频失败</string>
+    <string name="start_Talk_fail">开启语音对讲失败</string>
+    <string name="stop_Audio">关闭音频</string>
+    <string name="stop_Talk">关闭语音对讲</string>
+    <string name="capture_success">抓拍成功</string>
+    <string name="capture_fail">抓拍失败</string>
+    <string name="sd_card_fail">SD卡不可用</string>
+    <string name="sd_card_not_enough">SD卡空间不足</string>
+    <string name="preset_range">预置点范围为1~256，请重新设置</string>
+    <string name="set_preset">请设置预置点，范围为1~256</string>
+    <string-array name="camera_select_items">
+        <item>预览</item>
+        <item>回放</item>
+    </string-array>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--智能家居-->
+    <string name="device_add_gateway_1">接通电源红灯亮起</string>
+    <string name="device_add_gateway_2">将网线接入网关</string>
+    <string name="device_add_gateway_3">网关指示灯由红色变绿色（或蓝色）</string>
+    <string name="device_add_gateway_4">按下允许入网键</string>
+    <string name="device_add_gateway_5">指示灯红蓝绿三色交替闪烁</string>
+    <string name="device_add_gateway_6">成功</string>
+    <string name="device_add_gateway_7">无法正常操作网关重置</string>
+    <string name="pilotlamp_1">红灯:网关已接通电源</string>
+    <string name="pilotlamp_2">蓝灯:网关已连接到路由器局域网，此时可进行本地操作</string>
+    <string name="pilotlamp_3">绿灯:网关已通过路由器连接到广域网，此时可进行远程操作</string>
+    <string name="resetgateway_1">网关通电并在联网状态</string>
+    <string name="resetgateway_2">长按网关底部Reset键5秒以上</string>
+    <string name="resetgateway_3">网关指示灯红、蓝、绿三色交替闪烁</string>
+    <string name="resetgateway_4">完成网关重置</string>
+
+    <!--zxing-->
+    <string name="msg_camera_framework_bug">相机被占用或没有相机权限，请检查</string>
+    <string name="button_ok">退出</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+</resources>
